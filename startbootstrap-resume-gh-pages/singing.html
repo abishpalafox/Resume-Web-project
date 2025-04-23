@@ -62,22 +62,34 @@
 </head>
 <body>
 
+
+
   <h1>Sing with Heart 🎶</h1>
 <a href="#favoritos" style="color: #d55c36; font-weight: bold; margin-bottom: 20px;">Ver mis favoritos 🎤</a>
+
+
+
+
+<button onclick="singNote()">🎶 Sing a Note!</button>
+<p id="noteDisplay" style="font-size: 1.5rem; margin-top: 10px;"></p>
 
   <div class="quote-box" id="quoteBox">
     "The only thing better than singing is more singing." — Ella Fitzgerald
   </div>
   <section style="padding: 40px 20px; text-align: center;">
-    <h2 style="color: #d55c36;">Expresión Vocal</h2>
-    <p>El canto permite comunicar emociones más allá de las palabras. Esta imagen representa esa conexión artística.</p>
-    <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2868" alt="Person singing passionately into a microphone" width="600" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-top: 20px;">
+    <h2 style="color: #d55c36;">Legendary Artists</h2>
+    <p>Explore an interactive comparison of the greatest artists of all time.</p>
+    <img src="assets/img/abish-singing.jpg" 
+     alt="Abish singing into a microphone"
+     style="max-width: 100%; border-radius: 10px; box-shadow: 0px 2px 10px rgba(0,0,0,0.2); margin-top: 20px;">
+
   </section>
   
 <!-- Videos sobre Singing -->
 <section class="videos" style="padding: 40px 20px; text-align: center;">
-    <h2 style="color:#d55c36;">Inspiración Musical</h2>
-    <p>Explora cómo el canto puede sanar, inspirar y conectar con otros.</p>
+  <h2 style="color: #d55c36;">Musical Inspiration</h2>
+  <p>Explore how singing can heal, inspire, and connect people.</p>
+  
   
     <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:40px;">
       <iframe src="https://www.youtube.com/embed/HeRbnILnBCU?si=RRYuee7Outz6mRW_" 
@@ -95,8 +107,15 @@
       </iframe>
     </div>
   </section>
+
+  <button onclick="singNote()">🎶 Sing a Note!</button>
+  <p id="noteDisplay" style="font-size: 1.5rem; margin-top: 10px;"></p>
   
-  <button onclick="newQuote()">Give me another quote</button>
+  <div class="quote-box" id="quoteBox">
+    "The only thing better than singing is more singing." — Ella Fitzgerald
+  </div>
+  
+
 
   <footer>
     Let your voice be your story.<br>
@@ -112,23 +131,12 @@
     </iframe>
   </div>
   
-  
-  <script>
-    const quotes = [
-      "“Singing is like a celebration of oxygen.” — Björk",
-      "“Music is the language of the spirit. It opens the secret of life.” — Kahlil Gibran",
-      "“To sing is to express the soul without fear.”",
-      "“A song can say what words often cannot.”",
-      "“Every voice is unique. Use yours with pride.”",
-      "“Singing brings the invisible emotions into sound.”",
-      "“If you can talk, you can sing. If you can walk, you can dance.” — African Proverb",
-      "“Don't sing to impress. Sing to express.”",
-      "“Where words fail, music speaks.” — Hans Christian Andersen"
-    ];
+
+
     <!-- Videos sobre Singing -->
 <section class="videos" style="padding: 40px 20px; text-align: center;">
-  <h2 style="color:#d55c36;">Inspiración Musical</h2>
-  <p>Explora cómo el canto puede sanar, inspirar y conectar con otros.</p>
+  <h2 style="color:#d55c36;">Musical Inspiration</h2>
+<p>Explore how singing can heal, inspire, and connect others.</p>
 
   <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:40px;">
     <iframe src="https://www.youtube.com/embed/HeRbnILnBCU?si=RRYuee7Outz6mRW_" 
@@ -174,11 +182,39 @@
     </ol>
   </section>  
   <section style="padding: 40px 20px; text-align: center;">
-    <h2 style="color:#d55c36;">Artistas Legendarios</h2>
-    <p>Explora una comparación interactiva de los artistas más grandes de todos los tiempos.</p>
+    <h2 style="color: #d55c36;">Legendary Artists</h2>
+    <p>Explore an interactive comparison of the greatest artists of all time.</p>
+    
     <div style="overflow: auto;">
       <iframe src="https://public.tableau.com/views/G_O_A_T_Music/G_O_A_T_Music?:language=en-US&:display_count=n&:origin=viz_share_link" width="100%" height="600" frameborder="0"></iframe>
     </div>
-  </section>  
+  </section>
+
+  <footer>
+    Let your voice be your story.<br>
+    <a href="index.html" style="color: #d55c36; text-decoration: none;">← Back to Resume</a>
+  </footer> 
+
 </body>
+<script>
+  function singNote() {
+    const notes = [
+      "🎵 La la la!",
+      "🎶 Do Re Mi 🎶",
+      "🎤 Hit that high C!",
+      "🎧 Feel the rhythm!",
+      "🎙️ Just keep singing!",
+      "🎼 A note a day keeps the silence away!"
+    ];
+
+    const colors = ["#ffe4e1", "#f0f8ff", "#f5f5dc", "#e6e6fa", "#fffacd", "#e0ffff"];
+
+    const randomNote = notes[Math.floor(Math.random() * notes.length)];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+    document.body.style.backgroundColor = randomColor;
+    document.getElementById("noteDisplay").innerText = randomNote;
+  }
+</script>
+
 </html>
