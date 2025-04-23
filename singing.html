@@ -63,10 +63,8 @@
 <body>
 
 
-
   <h1>Sing with Heart 🎶</h1>
 <a href="#favoritos" style="color: #d55c36; font-weight: bold; margin-bottom: 20px;">Ver mis favoritos 🎤</a>
-
 
 
 
@@ -89,16 +87,6 @@
 <section class="videos" style="padding: 40px 20px; text-align: center;">
   <h2 style="color: #d55c36;">Musical Inspiration</h2>
   <p>Explore how singing can heal, inspire, and connect people.</p>
-  
-  
-    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:40px;">
-      <iframe src="https://www.youtube.com/embed/HeRbnILnBCU?si=RRYuee7Outz6mRW_" 
-              style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
-              allowfullscreen
-              title="How Singing Changes Your Brain">
-      </iframe>
-    </div>
-  
     <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
       <iframe src="https://www.youtube.com/embed/7ia8sZaSBK4?si=diQJ0f3noJjAd6JE" 
               style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
@@ -107,16 +95,12 @@
       </iframe>
     </div>
   </section>
-
   <button onclick="singNote()">🎶 Sing a Note!</button>
   <p id="noteDisplay" style="font-size: 1.5rem; margin-top: 10px;"></p>
   
   <div class="quote-box" id="quoteBox">
     "The only thing better than singing is more singing." — Ella Fitzgerald
   </div>
-  
-
-
   <footer>
     Let your voice be your story.<br>
     <a href="index.html" style="color:#d55c36; text-decoration: none;">← Back to Resume</a>
@@ -130,9 +114,6 @@
             allowfullscreen>
     </iframe>
   </div>
-  
-
-
     <!-- Videos sobre Singing -->
 <section class="videos" style="padding: 40px 20px; text-align: center;">
   <h2 style="color:#d55c36;">Musical Inspiration</h2>
@@ -145,22 +126,9 @@
             title="How Singing Changes Your Brain">
     </iframe>
   </div>
-
-  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-    <iframe src="https://www.youtube.com/embed/7ia8sZaSBK4?si=diQJ0f3noJjAd6JE" 
-            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
-            allowfullscreen
-            title="Vocal Masterclass Clip">
-    </iframe>
-  </div>
 </section>
 
 
-    function newQuote() {
-      const quoteBox = document.getElementById('quoteBox');
-      const random = Math.floor(Math.random() * quotes.length);
-      quoteBox.innerText = quotes[random];
-    }
   </script>
 <section id="favoritos" style="margin: 40px auto; max-width: 700px; text-align: left;">
     <h2 style="color:#d55c36;">My Favorite Things About Singing</h2>
@@ -184,11 +152,18 @@
   <section style="padding: 40px 20px; text-align: center;">
     <h2 style="color: #d55c36;">Legendary Artists</h2>
     <p>Explore an interactive comparison of the greatest artists of all time.</p>
-    
+  
     <div style="overflow: auto;">
-      <iframe src="https://public.tableau.com/views/G_O_A_T_Music/G_O_A_T_Music?:language=en-US&:display_count=n&:origin=viz_share_link" width="100%" height="600" frameborder="0"></iframe>
+      <iframe 
+        src="https://public.tableau.com/views/singerdashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"
+        width="100%" 
+        height="600px" 
+        style="border: none;" 
+        allowfullscreen>
+      </iframe>
     </div>
   </section>
+  
 
   <footer>
     Let your voice be your story.<br>
