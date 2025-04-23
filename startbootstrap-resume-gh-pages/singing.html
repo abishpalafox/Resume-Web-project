@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sing with Heart 🎶</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf6;
+      font-family: 'Raleway', sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #d55c36;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .quote-box {
+      background: #fff;
+      border-left: 4px solid #d55c36;
+      padding: 20px 30px;
+      margin: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      transition: all 0.3s ease-in-out;
+      font-style: italic;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color: #d55c36;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #c14e2f;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sing with Heart 🎶</h1>
+<a href="#favoritos" style="color: #d55c36; font-weight: bold; margin-bottom: 20px;">Ver mis favoritos 🎤</a>
+
+  <div class="quote-box" id="quoteBox">
+    "The only thing better than singing is more singing." — Ella Fitzgerald
+  </div>
+  <section style="padding: 40px 20px; text-align: center;">
+    <h2 style="color: #d55c36;">Expresión Vocal</h2>
+    <p>El canto permite comunicar emociones más allá de las palabras. Esta imagen representa esa conexión artística.</p>
+    <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2868" alt="Person singing passionately into a microphone" width="600" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-top: 20px;">
+  </section>
+  
+<!-- Videos sobre Singing -->
+<section class="videos" style="padding: 40px 20px; text-align: center;">
+    <h2 style="color:#d55c36;">Inspiración Musical</h2>
+    <p>Explora cómo el canto puede sanar, inspirar y conectar con otros.</p>
+  
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:40px;">
+      <iframe src="https://www.youtube.com/embed/HeRbnILnBCU?si=RRYuee7Outz6mRW_" 
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
+              allowfullscreen
+              title="How Singing Changes Your Brain">
+      </iframe>
+    </div>
+  
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+      <iframe src="https://www.youtube.com/embed/7ia8sZaSBK4?si=diQJ0f3noJjAd6JE" 
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
+              allowfullscreen
+              title="Vocal Masterclass Clip">
+      </iframe>
+    </div>
+  </section>
+  
+  <button onclick="newQuote()">Give me another quote</button>
+
+  <footer>
+    Let your voice be your story.<br>
+    <a href="index.html" style="color:#d55c36; text-decoration: none;">← Back to Resume</a>
+  </footer>
+<!-- Responsive YouTube Video -->
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin: 40px auto;max-width: 800px;">
+    <iframe src="https://www.youtube.com/embed/HeRbnILnBCU?si=RRYuee7Outz6mRW_" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+  </div>
+  
+  
+  <script>
+    const quotes = [
+      "“Singing is like a celebration of oxygen.” — Björk",
+      "“Music is the language of the spirit. It opens the secret of life.” — Kahlil Gibran",
+      "“To sing is to express the soul without fear.”",
+      "“A song can say what words often cannot.”",
+      "“Every voice is unique. Use yours with pride.”",
+      "“Singing brings the invisible emotions into sound.”",
+      "“If you can talk, you can sing. If you can walk, you can dance.” — African Proverb",
+      "“Don't sing to impress. Sing to express.”",
+      "“Where words fail, music speaks.” — Hans Christian Andersen"
+    ];
+    <!-- Videos sobre Singing -->
+<section class="videos" style="padding: 40px 20px; text-align: center;">
+  <h2 style="color:#d55c36;">Inspiración Musical</h2>
+  <p>Explora cómo el canto puede sanar, inspirar y conectar con otros.</p>
+
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:40px;">
+    <iframe src="https://www.youtube.com/embed/HeRbnILnBCU?si=RRYuee7Outz6mRW_" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
+            allowfullscreen
+            title="How Singing Changes Your Brain">
+    </iframe>
+  </div>
+
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/7ia8sZaSBK4?si=diQJ0f3noJjAd6JE" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
+            allowfullscreen
+            title="Vocal Masterclass Clip">
+    </iframe>
+  </div>
+</section>
+
+
+    function newQuote() {
+      const quoteBox = document.getElementById('quoteBox');
+      const random = Math.floor(Math.random() * quotes.length);
+      quoteBox.innerText = quotes[random];
+    }
+  </script>
+<section id="favoritos" style="margin: 40px auto; max-width: 700px; text-align: left;">
+    <h2 style="color:#d55c36;">My Favorite Things About Singing</h2>
+    <ol>
+      <li>Types of Singing Techniques:
+        <ul>
+          <li>Belting</li>
+          <li>Falsetto</li>
+          <li>Vibrato</li>
+        </ul>
+      </li>
+      <li>Genres I Enjoy Singing:
+        <ul>
+          <li>Jazz</li>
+          <li>Pop</li>
+          <li>Musical Theatre</li>
+        </ul>
+      </li>
+    </ol>
+  </section>  
+  <section style="padding: 40px 20px; text-align: center;">
+    <h2 style="color:#d55c36;">Artistas Legendarios</h2>
+    <p>Explora una comparación interactiva de los artistas más grandes de todos los tiempos.</p>
+    <div style="overflow: auto;">
+      <iframe src="https://public.tableau.com/views/G_O_A_T_Music/G_O_A_T_Music?:language=en-US&:display_count=n&:origin=viz_share_link" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </section>  
+</body>
+</html>
